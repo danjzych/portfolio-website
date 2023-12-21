@@ -1,1 +1,3 @@
-<h1 class="text-3xl">Hello world!</h1>
+<script lang="ts">
+	export let test = 'test';
+</script>
