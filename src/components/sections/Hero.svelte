@@ -2,7 +2,7 @@
 
 <div
 	id="hero"
-	class="position absolute flex min-h-screen min-w-full flex-col justify-center gap-6 px-8 md:px-40 lg:px-72"
+	class="flex min-h-screen min-w-full flex-col justify-center gap-6 px-8 md:px-40 lg:px-72"
 >
 	<div>
 		<h6 class="font-extralight">Hi, I'm</h6>
