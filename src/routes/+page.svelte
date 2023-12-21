@@ -1,3 +1,5 @@
 <script lang="ts">
-	export let test = 'test';
+	import Hero from '../components/Hero.svelte';
 </script>
+
+<Hero />
