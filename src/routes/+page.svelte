@@ -7,9 +7,11 @@
 	import Footer from '../components/Footer.svelte';
 </script>
 
-<Hero />
-<About />
-<Experience />
-<Projects />
-<Contact />
+<main>
+	<Hero />
+	<About />
+	<Experience />
+	<Projects />
+	<Contact />
+</main>
 <Footer />

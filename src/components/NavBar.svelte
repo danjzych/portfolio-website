@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
-	import { fly, slide } from 'svelte/transition';
+	import { fly } from 'svelte/transition';
 
 	let visible = false;
 	let mainVisible = false;
@@ -49,26 +49,26 @@
 					<a
 						href="#about"
 						on:click|preventDefault={handleClick}
-						transition:slide|global={{ delay: 0 }}>About</a
+						transition:fly|global={{ delay: 0, y: -20 }}>About</a
 					>
 					<a
 						href="#experience"
 						on:click|preventDefault={handleClick}
-						transition:slide|global={{ delay: 200 }}>Experience</a
+						transition:fly|global={{ delay: 200, y: -20 }}>Experience</a
 					>
 					<a
 						href="#projects"
 						on:click|preventDefault={handleClick}
-						transition:slide|global={{ delay: 400 }}>Projects</a
+						transition:fly|global={{ delay: 400, y: -20 }}>Projects</a
 					>
 					<a
 						href="#contact"
 						on:click|preventDefault={handleClick}
-						transition:slide|global={{ delay: 600 }}>Contact</a
+						transition:fly|global={{ delay: 600, y: -20 }}>Contact</a
 					>
 					<button
 						class="btn btn-sm"
-						transition:slide|global={{ delay: 1000 }}>Resume</button
+						transition:fly|global={{ delay: 900, x: -50 }}>Resume</button
 					>
 				</div>
 			{/if}
