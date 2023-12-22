@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { fade } from 'svelte/transition';
 	import headshot from '$lib/assets/Daniel-Zych.png';
 </script>
 
@@ -8,7 +9,12 @@
 >
 	<div class="grid w-3/5 grid-cols-5 gap-4">
 		<div class="col-span-3 flex flex-col gap-3 font-light">
-			<h2 class="text-3xl font-semibold">About Me</h2>
+			<h2
+				class="text-3xl font-semibold"
+				transition:fade={{ duration: 500 }}
+			>
+				About Me
+			</h2>
 			<p>
 				In a past life, I was a Product Manager that built a data-driven
 				SaaS product from the ground up (as well as touring musician and
@@ -29,7 +35,7 @@
 			</p>
 		</div>
 		<div class="col-span-2 flex items-center">
-			<img src={headshot} alt="Daniel Zych Headshot" />
+			<img src={headshot} alt="Daniel Zych Headshot" loading="lazy" />
 		</div>
 	</div>
 </section>

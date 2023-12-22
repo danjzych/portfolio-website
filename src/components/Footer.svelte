@@ -2,6 +2,6 @@
 	<p class="text-center text-sm font-extralight">
 		This site was loosely sketched out on paper before being coded by me,
 		myself, and I. Built with SvelteKit, Tailwind CSS, Vite, and a sprinkle
-		of Daisy UI. Deployed with Render.
+		of Daisy UI and Lucide. Deployed with Render.
 	</p>
 </footer>
