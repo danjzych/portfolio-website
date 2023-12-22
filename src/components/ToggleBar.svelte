@@ -1,5 +1,7 @@
 <script lang="ts">
-	export let items: [];
+	import type { Experience } from '../types/interfaces';
+
+	export let items: Experience[];
 	export let selected: number;
 </script>
 

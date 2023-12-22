@@ -1,8 +1,9 @@
 <script lang="ts">
+	import type { Experience } from '../../types/interfaces';
 	import ToggleBar from '../ToggleBar.svelte';
 	import ExperienceItem from '../ExperienceItem.svelte';
 
-	const EXPERIENCE = [
+	const EXPERIENCE: Experience[] = [
 		{
 			company: {
 				name: 'Foqal',
@@ -47,7 +48,7 @@
 	class="flex min-h-screen min-w-full flex-col items-center justify-center"
 >
 	<div class="w-3/5">
-		<h3 class="pb-6 text-3xl font-semibold">Experience & Education</h3>
+		<h2 class="pb-6 text-3xl font-semibold">Experience & Education</h2>
 		<div class="w-inherit grid grid-cols-6 gap-4">
 			<ToggleBar items={EXPERIENCE} bind:selected={selectedIdx} />
 			<ExperienceItem experience={EXPERIENCE[selectedIdx]} />
