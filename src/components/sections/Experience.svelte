@@ -7,35 +7,64 @@
 		{
 			company: {
 				name: 'Foqal',
+				link: 'https://www.foqal.io/',
 			},
 			position: {
 				title: 'Software Engineer Intern',
 				start_date: 'October 2023',
 				end_date: 'November 23',
+				description: [
+					'Translated complex design requirements into interactive and responsive components in React, Typescript, GraphQL, and Sass codebase as part of frontend redesign',
+					'Built “card” component to dynamically query for and present live data for open support tickets, as determined by user preferences',
+					'Implemented interaction-heavy Nav Bar component, using React Router to navigate users, and CSS to animate collapse of Nav Bar and additional UI interactions',
+					'Tested to ensure style and functionality of components in previous version of product, making sure that new style and functionality only were viewable to users who opted into trialing new version',
+					'Collaborated asynchronously with Product Owner to ensure components were implemented correctly and adhered to company style guide',
+				],
 			},
 		},
 		{
 			company: { name: 'Freelance' },
 			position: {
 				title: 'Touring Musician and Record Producer',
-				start_date: 'February 22',
-				end_date: 'August 23',
+				start_date: 'February 2022',
+				end_date: 'August 2023',
+				description: [
+					'Planned live show with artist and provided audio-visual assets and requirements to venue staff to ensure professional caliber liver performances',
+					'Garnered reputation as exciting and professional performer over 100+ international tour dates',
+					'Managed and executed the recording and production of multiple records',
+					'Handled customer service, booking, and invoicing as independent contractor',
+				],
 			},
 		},
 		{
-			company: { name: 'Rentable' },
+			company: { name: 'Rentable', link: 'https://www.rentable.co/' },
 			position: {
 				title: 'Product Manager',
 				start_date: 'November 2020',
-				end_date: 'May 22',
+				end_date: 'May 2022',
+				description: [
+					'Grew new business intelligence product to over 200+ customer accounts after receiving ownership during beta/MVP phase',
+					'Collaborated with executive leadership, engineering, design, sales, marketing, support, and onboarding teams to successfully plan, execute, and rollout full redesign of product',
+					'Planned and implemented product analytics strategy using Mixpanel and Segment, leading to Improved DAU, WAU, MAU, and Average Session Duration',
+					'Conducted always-on user research and user interviews to maintain an up-to-date and prioritized backlog to use in product roadmapping and sprint planning',
+					,
+					'Lead engineering team sprint planning and maintained tickets in Jira',
+				],
 			},
 		},
 		{
-			company: { name: 'Rentable' },
+			company: { name: 'Rentable', link: 'https://www.rentable.co/' },
 			position: {
-				title: 'Property Research Manager',
+				title: 'Property Research Lead',
 				start_date: 'April 2018',
 				end_date: 'November 2020',
+				description: [
+					'Managed team responsible for collecting and verifying property data for apartment listing website',
+					'Leveraged web-scraping technology to identify gaps in database, leading to a 10x growth in site’s rental listing inventory nationwide',
+					'Began and managed partnership with third-party organization that handled data input and verification',
+					'Hired, onboarded, and managed interns on Inventory team',
+					'Built data aggregation prototype that scraped apartment pricing data and generated unit-level pricing information using Python and postgresQL',
+				],
 			},
 		},
 	];
@@ -45,9 +74,9 @@
 
 <section
 	id="experience"
-	class="flex min-h-screen min-w-full flex-col items-center justify-center"
+	class="flex min-h-screen min-w-full flex-col items-center"
 >
-	<div class="w-3/5">
+	<div class="mt-40 w-3/5">
 		<h2 class="pb-6 text-3xl font-semibold">Experience & Education</h2>
 		<div class="w-inherit grid grid-cols-6 gap-4">
 			<ToggleBar items={EXPERIENCE} bind:selected={selectedIdx} />
