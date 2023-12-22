@@ -1,8 +1,8 @@
 <script lang="ts">
 	import mail from '$lib/assets/svgs/mail.svg';
-	// import mails from '$lib/assets/svgs/mails.svg';
+	import mails from '$lib/assets/svgs/mails.svg';
 
-	// let currentIcon = mail;
+	let currentIcon = mail;
 </script>
 
 <section
@@ -20,7 +20,17 @@
 			class="link">LinkedIn</a
 		>!
 	</p>
-	<button class="btn btn-primary shadow-lg hover:shadow-2xl"
-		><img src={mail} alt="mail icon" loading="lazy" /></button
+	<button
+		class="btn btn-primary shadow-lg hover:shadow-2xl"
+		on:mouseover={() => (currentIcon = mails)}
+		on:focus={() => (currentIcon = mails)}
+		on:mouseout={() => (currentIcon = mail)}
+		on:blur={() => (currentIcon = mail)}
+		><img
+			id="contact-email-icon"
+			src={currentIcon}
+			alt="mail icon"
+			loading="lazy"
+		/></button
 	>
 </section>
