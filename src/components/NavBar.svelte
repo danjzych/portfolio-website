@@ -23,9 +23,8 @@
 	>
 		<a
 			class="navbar-start text-3xl"
-			href="/"
-			on:click|preventDefault={() => scrollToSection('#hero')}
-			>Logo Here!</a
+			href="#hero"
+			on:click|preventDefault={scrollToSection}>Logo Here!</a
 		>
 		<div class="navbar-end">
 			{#if mainVisible}
