@@ -5,7 +5,7 @@
 	export let experience: Experience;
 </script>
 
-<div class="col-span-4 p-1">
+<div class="col-span-4 rounded-lg px-3 py-2 shadow-xl">
 	<h3>
 		<span class="text-xl font-semibold">
 			{experience.position.title}

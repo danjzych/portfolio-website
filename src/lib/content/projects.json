@@ -1,0 +1,35 @@
+[
+    {
+        "title": "Friender",
+        "link": "http://friender.danielzych.com/",
+        "description": "",
+        "technologies": [
+            "Flask",
+            "geoPy",
+            "SQLAlchemy",
+            "Typescript",
+            "React",
+            "Tailwind CSS"
+        ]
+    },
+    {
+        "title": "Jobly",
+        "link": "http://jobly.danielzych.com/",
+        "description": "",
+        "technologies": [
+            "Express",
+            "React",
+            "postgres"
+        ]
+    },
+    {
+        "title": "Wordle",
+        "link": "http://jobly.danielzych.com/",
+        "description": "http://wordle.danielzych.com/",
+        "technologies": [
+            "React",
+            "React Transition Group",
+            "Chart.js"
+        ]
+    }
+]
