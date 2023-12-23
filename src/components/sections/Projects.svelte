@@ -1,9 +1,26 @@
-<script lang="ts"></script>
+<script lang="ts">
+	import type { Project } from '../../types/interfaces';
+	import ProjectItem from '../ProjectItem.svelte';
+	import PROJECTS from '$lib/content/projects.json';
+	import { scrollToSection } from '$lib/utils';
 
-<div
+	const projects: Project[] = PROJECTS;
+</script>
+
+<section
 	id="projects"
-	class="flex min-h-screen min-w-full flex-col justify-center gap-6 px-8 md:px-40 lg:px-72"
+	class="flex min-h-screen min-w-full flex-col items-center gap-6"
 >
-	<h3 class="text-3xl font-semibold">Projects</h3>
-	<div></div>
-</div>
+	<div class="mt-40 w-3/5">
+		<h2 class="text-3xl font-semibold">
+			<a href="#projects" on:click|preventDefault={scrollToSection}
+				>Projects</a
+			>
+		</h2>
+		<div class="flex w-full flex-col items-center gap-16">
+			{#each projects as project, i}
+				<ProjectItem {project} />
+			{/each}
+		</div>
+	</div>
+</section>

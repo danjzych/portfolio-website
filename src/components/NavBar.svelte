@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
 	import { fly } from 'svelte/transition';
+	import { scrollToSection } from '$lib/utils';
 
 	let visible = false;
 	let mainVisible = false;
@@ -10,23 +11,6 @@
 			visible = true;
 		}, 200);
 	});
-
-	function scrollToSection(sectionId: string) {
-		const selectedSection = document.querySelector(sectionId);
-
-		if (selectedSection) {
-			selectedSection.scrollIntoView({
-				behavior: 'smooth',
-				block: 'start',
-			});
-		}
-	}
-
-	function handleClick(evt) {
-		const sectionId = evt.target.getAttribute('href');
-
-		scrollToSection(sectionId);
-	}
 </script>
 
 {#if visible}
@@ -48,22 +32,22 @@
 				<div class="flex items-center gap-2">
 					<a
 						href="#about"
-						on:click|preventDefault={handleClick}
+						on:click|preventDefault={scrollToSection}
 						transition:fly|global={{ delay: 0, y: -20 }}>About</a
 					>
 					<a
 						href="#experience"
-						on:click|preventDefault={handleClick}
+						on:click|preventDefault={scrollToSection}
 						transition:fly|global={{ delay: 200, y: -20 }}>Experience</a
 					>
 					<a
 						href="#projects"
-						on:click|preventDefault={handleClick}
+						on:click|preventDefault={scrollToSection}
 						transition:fly|global={{ delay: 400, y: -20 }}>Projects</a
 					>
 					<a
 						href="#contact"
-						on:click|preventDefault={handleClick}
+						on:click|preventDefault={scrollToSection}
 						transition:fly|global={{ delay: 600, y: -20 }}>Contact</a
 					>
 					<button

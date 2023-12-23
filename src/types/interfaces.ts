@@ -13,3 +13,12 @@ export interface Experience {
 		description: string[];
 	};
 }
+
+export interface Project {
+	title: string;
+	//later make an image url type and extend
+	link: string;
+	description: string;
+	image: string;
+	technologies: string[];
+}

@@ -3,6 +3,7 @@
         "title": "Friender",
         "link": "http://friender.danielzych.com/",
         "description": "",
+        "image": "",
         "technologies": [
             "Flask",
             "geoPy",
@@ -16,6 +17,7 @@
         "title": "Jobly",
         "link": "http://jobly.danielzych.com/",
         "description": "",
+        "image": "",
         "technologies": [
             "Express",
             "React",
@@ -24,8 +26,9 @@
     },
     {
         "title": "Wordle",
-        "link": "http://jobly.danielzych.com/",
-        "description": "http://wordle.danielzych.com/",
+        "link": "http://wordle.danielzych.com/",
+        "description": "I love Wordle, so I made it. Can use machine keyboard or UI keyboard buttons to play. Game record stored in local storage.",
+        "image": "",
         "technologies": [
             "React",
             "React Transition Group",
