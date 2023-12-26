@@ -19,10 +19,10 @@
     {
         "title": "Jobly",
         "link": "http://jobly.danielzych.com/",
-        "description": "",
-        "image": "",
-        "github": "",
-        "demo": "",
+        "description": "A job board web app to explore jobs and employers. Use live search feature for quick and responsive search experience.",
+        "image": "/imgs/jobly-homepage-screenshot.png",
+        "github": "https://github.com/danjzych/react-jobly/",
+        "demo": "http://jobly.danielzych.com/",
         "technologies": [
             "Express",
             "React",
@@ -32,10 +32,10 @@
     {
         "title": "Wordle",
         "link": "http://wordle.danielzych.com/",
-        "description": "I love Wordle, so I made it. Can use machine keyboard or UI keyboard buttons to play. Game record stored in local storage.",
-        "image": "",
-        "github": "",
-        "demo": "",
+        "description": "I love Wordle, so I made my own version! Users can use machine keyboard or UI keyboard buttons to play. Game record stored in local storage to track your record over time! Unlike official Wordle, this version provides an unlimited number of words per day.",
+        "image": "/imgs/wordle-homepage-screenshot.png",
+        "github": "https://github.com/danjzych/wordle",
+        "demo": "http://wordle.danielzych.com/",
         "technologies": [
             "React",
             "React Transition Group",

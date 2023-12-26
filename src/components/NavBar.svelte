@@ -42,7 +42,7 @@
 					<a
 						href="#projects"
 						on:click|preventDefault={scrollToSection}
-						transition:fly|global={{ delay: 400, y: -20 }}>Projects</a
+						transition:fly|global={{ delay: 400, y: -20 }}>Portfolio</a
 					>
 					<a
 						href="#contact"
