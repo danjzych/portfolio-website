@@ -19,6 +19,10 @@ export interface Project {
 	//later make an image url type and extend
 	link: string;
 	description: string;
+	features?: string[];
+	notes?: string;
 	image: string;
+	github: string;
+	demo: string;
 	technologies: string[];
 }

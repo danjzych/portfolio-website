@@ -11,16 +11,14 @@
 	id="projects"
 	class="flex min-h-screen min-w-full flex-col items-center gap-6"
 >
-	<div class="mt-40 w-3/5">
-		<h2 class="text-3xl font-semibold">
-			<a href="#projects" on:click|preventDefault={scrollToSection}
-				>Projects</a
-			>
-		</h2>
-		<div class="flex w-full flex-col items-center gap-16">
-			{#each projects as project, i}
-				<ProjectItem {project} />
-			{/each}
-		</div>
+	<h2 class="mt-32 w-3/5 pb-6 text-3xl font-semibold">
+		<a href="#projects" on:click|preventDefault={scrollToSection}
+			>Portfolio</a
+		>
+	</h2>
+	<div class="flex w-4/6 flex-col items-center gap-32">
+		{#each projects as project, i}
+			<ProjectItem {project} {i} />
+		{/each}
 	</div>
 </section>

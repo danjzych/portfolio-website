@@ -2,15 +2,18 @@
     {
         "title": "Friender",
         "link": "http://friender.danielzych.com/",
-        "description": "",
-        "image": "",
+        "description": "A web app app to  find like-minded people near you. After making an account and building a profile, users are able to explore, match, and chat with other uses within their selected geographic search radius.",
+        "features": ["Geolocation-based user matching"],
+        "notes": "To best experience demo, use demo account provided on homepage, or create a new user with zipcode set to 10001 and a radius of 10 or greater.",
+        "image": "/imgs/friender-homepage-screenshot.png",
+        "github": "https://github.com/danjzych/friender-frontend",
+        "demo": "http://friender.danielzych.com/",
         "technologies": [
             "Flask",
-            "geoPy",
-            "SQLAlchemy",
+            "postgreSQL",
             "Typescript",
             "React",
-            "Tailwind CSS"
+            "Tailwind"
         ]
     },
     {
@@ -18,10 +21,12 @@
         "link": "http://jobly.danielzych.com/",
         "description": "",
         "image": "",
+        "github": "",
+        "demo": "",
         "technologies": [
             "Express",
             "React",
-            "postgres"
+            "postgreSQL"
         ]
     },
     {
@@ -29,6 +34,8 @@
         "link": "http://wordle.danielzych.com/",
         "description": "I love Wordle, so I made it. Can use machine keyboard or UI keyboard buttons to play. Game record stored in local storage.",
         "image": "",
+        "github": "",
+        "demo": "",
         "technologies": [
             "React",
             "React Transition Group",
