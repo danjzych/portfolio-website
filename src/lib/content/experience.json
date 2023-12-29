@@ -18,7 +18,7 @@
         }
     },
     {
-        "company": { "name": "KennyHoopla" },
+        "company": { "name": "KennyHoopla", "link": "https://www.youtube.com/watch?v=SSlxU7FKdF4" },
         "position": {
             "title": "Touring Musician and Record Producer",
             "start_date": "February 2022",

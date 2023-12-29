@@ -24,7 +24,7 @@
 		<a
 			class="navbar-start text-3xl"
 			href="#hero"
-			on:click|preventDefault={scrollToSection}>Logo Here!</a
+			on:click|preventDefault={scrollToSection}>Daniel Zych</a
 		>
 		<div class="navbar-end">
 			{#if mainVisible}

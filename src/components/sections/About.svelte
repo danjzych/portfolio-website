@@ -1,9 +1,30 @@
 <script lang="ts">
+	import { onDestroy, onMount } from 'svelte';
 	import { fade } from 'svelte/transition';
 	import headshot from '$lib/assets/Daniel-Zych.png';
+
+	let inView = false;
+	let section: HTMLElement;
+
+	// const observer = new IntersectionObserver((entries) => {
+	// 	if (entries[0].isIntersecting) {
+	// 		inView = true;
+	// 		console.log('test');
+	// 		observer.disconnect();
+	// 	}
+	// });
+
+	// onMount(() => {
+	// 	observer.observe(section);
+	// });
+
+	// onDestroy(() => {
+	// 	observer.disconnect();
+	// });
 </script>
 
 <section
+	bind:this={section}
 	id="about"
 	class="flex min-h-screen min-w-full flex-col items-center justify-center"
 >
@@ -21,17 +42,17 @@
 				record producer).
 			</p>
 			<p>
-				Though, I’ve moved on from product and design, I’m still product
-				and design-minded, and love building applications with clean,
-				snappy front-ends that are intuitive and enjoyable for the end
-				user. I love any opportunity to apply both my analytical and
-				creative sides to technical projects, and bring a unique blend of
-				both to everything I work on.
+				Though I’ve moved on from product and design, I’m still product and
+				design-minded, and love building applications with clean, snappy
+				front-ends that are intuitive and enjoyable for the end user. I
+				love any opportunity to apply both my analytical and creative sides
+				to technical projects, and bring a unique blend of both to
+				everything I work on.
 			</p>
 			<p>
-				When I’m not at my computer, I’m skateboarding, hanging out with my
-				girlfriend and our cats, or having one more coffee than I need to,
-				then regretting it.
+				When I’m not hunkered down at my computer, I’m making music 🎸,
+				skateboarding 🛹, hanging out with my girlfriend and our cats 🐈,
+				or having one more coffee than I need to, then regretting it ☕️.
 			</p>
 		</div>
 		<div class="col-span-2 flex items-center">

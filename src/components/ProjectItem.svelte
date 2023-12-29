@@ -5,8 +5,6 @@
 
 	export let project: Project;
 	export let i: number;
-
-	const technologies = project.technologies.join(' | ');
 </script>
 
 <a href={project.demo} target="_blank">
@@ -25,9 +23,6 @@
 				<h3 class="text-center text-2xl font-semibold">
 					{project.title}
 				</h3>
-				<!-- <div class="self-center text-sm font-extralight">
-					{project.technologies.join(' ')}
-				</div> -->
 				<p class="my-6 text-right font-light">{project.description}</p>
 				<div class="flex flex-wrap gap-1">
 					{#each project.technologies as technology}
@@ -35,11 +30,19 @@
 					{/each}
 				</div>
 				<div class="my-4 flex justify-evenly">
-					<a href={project.demo} target="_blank" class=""
-						><img src={externalLink} alt="Github logo" /></a
+					<a href={project.demo} target="_blank"
+						><img
+							src={externalLink}
+							alt="Github logo"
+							class="hover:opacity-70"
+						/></a
 					>
 					<a href={project.github} target="_blank" class=""
-						><img src={githubIcon} alt="Github logo" /></a
+						><img
+							src={githubIcon}
+							alt="Github logo"
+							class="hover:opacity-70"
+						/></a
 					>
 				</div>
 			</div>

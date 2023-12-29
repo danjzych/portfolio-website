@@ -1,6 +1,6 @@
 <script lang="ts">
 	import type { Experience } from '../types/interfaces';
-	import { fade, blur } from 'svelte/transition';
+	import { fade } from 'svelte/transition';
 	import chevronRight from '$lib/assets/svgs/chevron-right.svg';
 
 	export let experience: Experience;
@@ -17,7 +17,11 @@
 		at
 		<span class="text-lime-700">
 			{#if experience.company.link}
-				<a href={experience.company.link} class="hover:opacity-70">
+				<a
+					href={experience.company.link}
+					class="hover:opacity-70"
+					target="_blank"
+				>
 					{experience.company.name}
 				</a>
 			{:else}
