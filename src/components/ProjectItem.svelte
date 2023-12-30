@@ -4,7 +4,6 @@
 	import githubIcon from '$lib/assets/svgs/github-icon.svg';
 
 	export let project: Project;
-	export let i: number;
 </script>
 
 <a href={project.demo} target="_blank">

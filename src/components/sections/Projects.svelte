@@ -20,8 +20,8 @@
 		<span class="text-sm font-thin">Selected Projects</span>
 	</h2>
 	<div class="flex w-4/6 flex-col items-center gap-32">
-		{#each projects as project, i}
-			<ProjectItem {project} {i} />
+		{#each projects as project}
+			<ProjectItem {project} />
 		{/each}
 	</div>
 </section>

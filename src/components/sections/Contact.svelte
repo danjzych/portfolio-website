@@ -1,8 +1,15 @@
 <script lang="ts">
+	import { fly } from 'svelte/transition';
 	import mail from '$lib/assets/svgs/mail.svg';
 	import mailOpen from '$lib/assets/svgs/mail-open.svg';
+	import { onMount } from 'svelte';
 
+	let loaded = false;
 	let currentIcon = mail;
+
+	onMount(() => {
+		loaded = true;
+	});
 </script>
 
 <section
@@ -20,18 +27,21 @@
 			class="link">LinkedIn</a
 		>!
 	</p>
-	<a
-		class="btn shadow-lg hover:shadow-md"
-		on:mouseover={() => (currentIcon = mailOpen)}
-		on:focus={() => (currentIcon = mailOpen)}
-		on:mouseout={() => (currentIcon = mail)}
-		on:blur={() => (currentIcon = mail)}
-		href="MAILTO:danjzych@gmail.com"
-		><img
-			id="contact-email-icon"
-			src={currentIcon}
-			alt="mail icon"
-			loading="lazy"
-		/></a
-	>
+	{#if loaded}
+		<a
+			class="btn shadow-lg hover:shadow-md"
+			on:mouseover={() => (currentIcon = mailOpen)}
+			on:focus={() => (currentIcon = mailOpen)}
+			on:mouseout={() => (currentIcon = mail)}
+			on:blur={() => (currentIcon = mail)}
+			href="MAILTO:danjzych@gmail.com"
+			in:fly|global={{ delay: 500, duration: 500, y: 200 }}
+			><img
+				id="contact-email-icon"
+				src={currentIcon}
+				alt="mail icon"
+				loading="lazy"
+			/></a
+		>
+	{/if}
 </section>
