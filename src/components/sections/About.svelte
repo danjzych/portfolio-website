@@ -1,28 +1,10 @@
 <script lang="ts">
 	import { fade, fly } from 'svelte/transition';
 	import headshot from '$lib/assets/Daniel-Zych.png';
+	import { scrollToSection } from '$lib/utils';
+	import useIntersectionObserver from '$lib/useIntersectionObserver';
 
 	let inView = false;
-
-	function useIntersectionObserver(element: HTMLElement) {
-		const observer = new IntersectionObserver(
-			(entries) => {
-				for (const entry of entries) {
-					if (entry.isIntersecting) {
-						entry.target.dispatchEvent(new CustomEvent('enterView'));
-					}
-				}
-			},
-			{ threshold: 0.5 },
-		);
-		observer.observe(element);
-
-		return {
-			destroy() {
-				observer.disconnect();
-			},
-		};
-	}
 </script>
 
 <section
@@ -33,7 +15,11 @@
 >
 	<div class="grid w-3/5 grid-cols-5 gap-4">
 		<div class="col-span-3 flex flex-col gap-3 font-light">
-			<h2 class="text-3xl font-semibold">About Me</h2>
+			<h2 class="text-3xl font-semibold">
+				<a href="#about" on:click|preventDefault={scrollToSection}
+					>About Me</a
+				>
+			</h2>
 			{#if inView}
 				<div transition:fade={{ delay: 200 }}>
 					<p>
