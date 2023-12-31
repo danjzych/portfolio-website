@@ -33,7 +33,7 @@
 	<div class="mt-40 w-3/5">
 		<h2 class="pb-6 text-3xl font-semibold">
 			<a href="#experience" on:click|preventDefault={scrollToSection}
-				>Experience & Education</a
+				>Experience</a
 			>
 		</h2>
 		{#if inView}

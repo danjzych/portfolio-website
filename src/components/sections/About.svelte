@@ -21,11 +21,11 @@
 				>
 			</h2>
 			{#if inView}
-				<div transition:fade={{ delay: 200 }}>
+				<div transition:fade={{ delay: 200 }} class="flex flex-col gap-3">
 					<p>
 						In a past life, I was a Product Manager that built a
-						data-driven SaaS product from the ground up (as well as touring
-						musician and record producer).
+						data-driven SaaS product from the ground up, as well as touring
+						musician and record producer.
 					</p>
 					<p>
 						Though I’ve moved on from product and design, I’m still product

@@ -1,7 +1,7 @@
 <footer class="min-w-full px-4 py-4 md:px-64 lg:px-80">
 	<p class="text-center text-sm font-extralight">
 		Built with SvelteKit, Tailwind CSS, Vite, and a sprinkle of Daisy UI.
-		Deployed with Render. Built by me. View it on <a
+		Deployed with Render. View it on <a
 			href="https://github.com/danjzych/portfolio-website"
 			target="_blank"
 			class="link">Github</a

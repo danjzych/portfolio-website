@@ -9,7 +9,7 @@
 	{#each items as item, i}
 		<li>
 			<button
-				class="w-full border-l-2 border-lime-300 py-2 pl-3 text-left font-light hover:cursor-pointer hover:bg-lime-100 hover:font-normal"
+				class="w-full border-l-2 border-yellow-300 py-2 pl-3 text-left font-light hover:cursor-pointer hover:bg-yellow-100 hover:font-normal"
 				class:active={selected === i}
 				on:click={() => (selected = i)}
 			>
@@ -21,6 +21,6 @@
 
 <style>
 	.active {
-		@apply border-lime-500 bg-lime-200 font-semibold;
+		@apply border-yellow-500 bg-accent font-semibold;
 	}
 </style>

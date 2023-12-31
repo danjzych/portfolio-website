@@ -34,7 +34,7 @@
 
 <style>
 	.hero-name {
-		background: radial-gradient(red, blue);
+		background: radial-gradient(#fde047, #16a34a, #6366f1, #fde047);
 		background-size: 200% auto;
 		color: transparent;
 		-webkit-background-clip: text;

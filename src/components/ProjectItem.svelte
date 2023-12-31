@@ -41,7 +41,7 @@
 							<div
 								class="btn btn-accent btn-xs"
 								transition:fade|global={{
-									delay: 200 + 100 * (i + 1),
+									delay: 300 + 100 * (i + 1),
 									duration: 200,
 								}}
 							>
