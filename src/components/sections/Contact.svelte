@@ -10,14 +10,16 @@
 
 <section
 	id="contact"
-	class="flex min-h-screen min-w-full flex-col items-center justify-center gap-6"
+	class="flex min-h-screen min-w-full flex-col items-center justify-center gap-6 px-4 sm:px-0"
 	use:useIntersectionObserver
 	on:enterView={() => (inView = true)}
 >
-	<h3 class="text-4xl font-semibold">Let's build something together!</h3>
+	<h3 class="text-center text-4xl font-semibold">
+		Let's build something together!
+	</h3>
 	{#if inView}
 		<p
-			class="w-3/5 text-center font-light"
+			class="text-center font-light sm:w-3/5"
 			transition:fade={{ duration: 400 }}
 		>
 			I’m currently on the hunt for my next engineering opportunity, and

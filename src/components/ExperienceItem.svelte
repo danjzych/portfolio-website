@@ -7,7 +7,7 @@
 </script>
 
 <div
-	class="col-span-4 rounded-lg px-3 py-2 shadow-xl"
+	class="col-span-4 rounded-lg bg-iceberg-50 px-3 py-2 shadow-xl"
 	transition:fade|global={{ duration: 250 }}
 >
 	<h3>
@@ -15,11 +15,11 @@
 			{experience.position.title}
 		</span>
 		at
-		<span class="text-lime-700">
+		<span class="text-iceberg-500">
 			{#if experience.company.link}
 				<a
 					href={experience.company.link}
-					class="hover:opacity-70"
+					class="hover:opacity-70 active:text-iceberg-700"
 					target="_blank"
 				>
 					{experience.company.name}

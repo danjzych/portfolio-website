@@ -7,6 +7,7 @@
 
 	export let project: Project;
 	let inView = false;
+	let badgesInView = false;
 </script>
 
 <a
@@ -17,7 +18,7 @@
 >
 	{#if inView}
 		<div
-			class="rounded-lg shadow-xl hover:bg-slate-100 hover:opacity-85 hover:shadow-md"
+			class="rounded-lg bg-iceberg-50 shadow-xl transition-colors duration-200 hover:bg-iceberg-100 hover:shadow-md"
 			transition:fly={{ delay: 50, y: -200 }}
 		>
 			<div class="grid w-full grid-cols-5 gap-12 p-6">
@@ -36,18 +37,24 @@
 					<p class="my-6 text-right font-light">
 						{project.description}
 					</p>
-					<div class="flex flex-wrap gap-1">
-						{#each project.technologies as technology, i}
-							<div
-								class="btn btn-accent btn-xs"
-								transition:fade|global={{
-									delay: 300 + 100 * (i + 1),
-									duration: 200,
-								}}
-							>
-								{technology}
-							</div>
-						{/each}
+					<div
+						class="flex flex-wrap gap-1"
+						use:useIntersectionObserver
+						on:enterView={() => (badgesInView = true)}
+					>
+						{#if badgesInView}
+							{#each project.technologies as technology, i}
+								<div
+									class="btn btn-accent btn-xs"
+									transition:fade|global={{
+										delay: 300 + 100 * (i + 1),
+										duration: 200,
+									}}
+								>
+									{technology}
+								</div>
+							{/each}
+						{/if}
 					</div>
 					<div class="my-4 flex justify-evenly">
 						<a href={project.demo} target="_blank"

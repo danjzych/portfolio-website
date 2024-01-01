@@ -13,8 +13,8 @@
 	use:useIntersectionObserver
 	on:enterView={() => (inView = true)}
 >
-	<div class="grid w-3/5 grid-cols-5 gap-4">
-		<div class="col-span-3 flex flex-col gap-3 font-light">
+	<div class="px-4 sm:grid sm:w-3/5 sm:grid-cols-5 sm:gap-4 sm:px-0">
+		<div class="flex flex-col gap-3 font-light sm:col-span-3">
 			<h2 class="text-3xl font-semibold">
 				<a href="#about" on:click|preventDefault={scrollToSection}
 					>About Me</a
@@ -44,7 +44,7 @@
 				</div>
 			{/if}
 		</div>
-		<div class="col-span-2 flex items-center">
+		<div class="mt-8 flex items-center sm:col-span-2 sm:my-0">
 			{#if inView}
 				<img
 					src={headshot}

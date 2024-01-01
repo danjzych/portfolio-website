@@ -50,7 +50,7 @@
 						transition:fly|global={{ delay: 600, y: -20 }}>Contact</a
 					>
 					<button
-						class="btn btn-sm"
+						class="btn btn-sm bg-iceberg-500 text-iceberg-50 hover:bg-iceberg-600 active:bg-iceberg-700"
 						transition:fly|global={{ delay: 900, x: -50 }}>Resume</button
 					>
 				</div>

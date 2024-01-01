@@ -11,7 +11,7 @@
 
 <div
 	id="hero"
-	class="flex min-h-screen min-w-full flex-col justify-center gap-6 px-8 md:px-40 lg:px-72"
+	class="flex min-h-screen min-w-full flex-col justify-center gap-6 px-4 sm:px-8 md:px-40 lg:px-72"
 >
 	{#if visible}
 		<div transition:fly|global={{ delay: 2000, duration: 500, x: -200 }}>
