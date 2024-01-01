@@ -21,7 +21,7 @@
 			class="rounded-lg bg-iceberg-50 shadow-xl transition-colors duration-200 hover:bg-iceberg-100 hover:shadow-md"
 			transition:fly={{ delay: 50, y: -200 }}
 		>
-			<div class="w-full gap-12 p-6 lg:grid lg:grid-cols-5">
+			<div class="w-full p-6 lg:grid lg:grid-cols-5 lg:gap-12">
 				<figure class="flex items-center sm:col-span-3">
 					<img
 						src={project.image}
@@ -47,7 +47,7 @@
 								<div
 									class="btn btn-accent no-animation btn-xs border-none bg-iceberg-500 text-iceberg-100 hover:bg-iceberg-500 active:bg-iceberg-500"
 									transition:fade|global={{
-										delay: 300 + 100 * (i + 1),
+										delay: 100 + 100 * (i + 1),
 										duration: 200,
 									}}
 								>

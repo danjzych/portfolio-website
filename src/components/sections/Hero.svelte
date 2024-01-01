@@ -16,8 +16,8 @@
 	{#if visible}
 		<div transition:fly|global={{ delay: 2000, duration: 500, x: -200 }}>
 			<p class="font-extralight text-iceberg-700">Hi, I'm</p>
-			<h1 class="hero-name max-w-max text-7xl font-semibold">
-				Daniel Zych!
+			<h1 class="max-w-max text-7xl font-semibold">
+				<span class="hero-name"> Daniel Zych! </span>
 			</h1>
 			<!-- <p class="text-5xl font-light">I build things.</p> -->
 		</div>
@@ -34,7 +34,7 @@
 
 <style>
 	.hero-name {
-		background: radial-gradient(#fde047, #16a34a, #6366f1, #fde047);
+		background: radial-gradient(#1e514e, #76d2c4);
 		background-size: 200% auto;
 		color: transparent;
 		-webkit-background-clip: text;
