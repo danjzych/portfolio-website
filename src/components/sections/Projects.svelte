@@ -17,7 +17,9 @@
 		<a href="#projects" on:click|preventDefault={scrollToSection}
 			>Portfolio</a
 		>
-		<span class="text-sm font-thin">Selected Projects</span>
+		<span class="text-sm font-thin text-iceberg-700"
+			>Selected Projects</span
+		>
 	</h2>
 	<div class="flex w-4/6 flex-col items-center gap-32">
 		{#each projects as project}

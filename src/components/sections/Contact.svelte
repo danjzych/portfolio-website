@@ -32,7 +32,7 @@
 			>!
 		</p>
 		<a
-			class="btn shadow-lg hover:shadow-md"
+			class="text-iceberg-100shadow-lg btn bg-iceberg-500 hover:bg-iceberg-600 hover:shadow-md active:bg-iceberg-700"
 			on:mouseover={() => (currentIcon = mailOpen)}
 			on:focus={() => (currentIcon = mailOpen)}
 			on:mouseout={() => (currentIcon = mail)}

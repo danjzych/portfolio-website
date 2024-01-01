@@ -21,8 +21,8 @@
 			class="rounded-lg bg-iceberg-50 shadow-xl transition-colors duration-200 hover:bg-iceberg-100 hover:shadow-md"
 			transition:fly={{ delay: 50, y: -200 }}
 		>
-			<div class="grid w-full grid-cols-5 gap-12 p-6">
-				<figure class="col-span-3 flex items-center">
+			<div class="w-full gap-12 p-6 lg:grid lg:grid-cols-5">
+				<figure class="flex items-center sm:col-span-3">
 					<img
 						src={project.image}
 						alt={`Screenshot from ${project.title} project.`}
@@ -30,22 +30,22 @@
 						transition:fade={{ delay: 200, duration: 500 }}
 					/>
 				</figure>
-				<div class="col-span-2 flex flex-col justify-between">
+				<div class="col-span-2 mt-6 flex flex-col justify-between lg:mt-0">
 					<h3 class="text-center text-2xl font-semibold">
 						{project.title}
 					</h3>
-					<p class="my-6 text-right font-light">
+					<p class="my-6 font-light lg:text-right">
 						{project.description}
 					</p>
 					<div
-						class="flex flex-wrap gap-1"
+						class="flex flex-wrap justify-center gap-1 lg:justify-start"
 						use:useIntersectionObserver
 						on:enterView={() => (badgesInView = true)}
 					>
 						{#if badgesInView}
 							{#each project.technologies as technology, i}
 								<div
-									class="btn btn-accent btn-xs"
+									class="btn btn-accent no-animation btn-xs border-none bg-iceberg-500 text-iceberg-100 hover:bg-iceberg-500 active:bg-iceberg-500"
 									transition:fade|global={{
 										delay: 300 + 100 * (i + 1),
 										duration: 200,

@@ -15,7 +15,7 @@
 >
 	{#if visible}
 		<div transition:fly|global={{ delay: 2000, duration: 500, x: -200 }}>
-			<p class="font-extralight">Hi, I'm</p>
+			<p class="font-extralight text-iceberg-700">Hi, I'm</p>
 			<h1 class="hero-name max-w-max text-7xl font-semibold">
 				Daniel Zych!
 			</h1>
