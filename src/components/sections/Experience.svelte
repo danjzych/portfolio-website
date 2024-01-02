@@ -17,7 +17,6 @@
 	$: if (selectedIdx) {
 		visible = false;
 
-		console.log('test');
 		setTimeout(() => {
 			visible = true;
 		}, 275);
@@ -30,15 +29,23 @@
 	use:useIntersectionObserver
 	on:enterView={() => (inView = true)}
 >
-	<div class="mt-40 w-3/5">
-		<h2 class="pb-6 text-3xl font-semibold">
+	<div class="mt-40 px-4 md:w-3/5 md:px-0">
+		<h2
+			class="flex items-center justify-between pb-6 text-3xl font-semibold"
+		>
 			<a href="#experience" on:click|preventDefault={scrollToSection}
 				>Experience</a
+			>
+			<a
+				href="/static/daniel-zych-software-engineer-resume.pdf"
+				target="_blank"
+				class="btn btn-xs bg-iceberg-400 text-iceberg-100 hover:bg-iceberg-500 active:bg-iceberg-600"
+				>Full Resume</a
 			>
 		</h2>
 		{#if inView}
 			<div
-				class="w-inherit grid grid-cols-6 gap-4"
+				class="w-inherit lg:grid lg:grid-cols-6 lg:gap-4"
 				transition:blur={{ delay: 200, duration: 400 }}
 			>
 				<ToggleBar items={experiences} bind:selected={selectedIdx} />

@@ -10,6 +10,8 @@
 
 	/** Track window.innerWidth to responsively component layout */
 	onMount(() => {
+		viewportWidth.set(window.innerWidth);
+
 		window.addEventListener('resize', (evt) => {
 			viewportWidth.set(window.innerWidth);
 		});
