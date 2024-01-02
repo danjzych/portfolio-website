@@ -1,8 +1,11 @@
 <script lang="ts">
 	import { blur } from 'svelte/transition';
+	import { viewportWidth } from '../../stores';
 	import type { Experience } from '../../types/interfaces';
+	import { Breakpoints } from '../../types/types';
 	import ToggleBar from '../ToggleBar.svelte';
 	import ExperienceItem from '../ExperienceItem.svelte';
+	import Resume from '../Resume.svelte';
 	import EXPERIENCE from '$lib/content/experience.json';
 	import { scrollToSection } from '$lib/utils';
 	import useIntersectionObserver from '$lib/useIntersectionObserver';
@@ -13,6 +16,7 @@
 
 	let visible = true;
 	let inView = false;
+	let showResume = false;
 
 	$: if (selectedIdx) {
 		visible = false;
@@ -36,12 +40,12 @@
 			<a href="#experience" on:click|preventDefault={scrollToSection}
 				>Experience</a
 			>
-			<a
-				href="/static/daniel-zych-software-engineer-resume.pdf"
-				target="_blank"
-				class="btn btn-xs bg-iceberg-400 text-iceberg-100 hover:bg-iceberg-500 active:bg-iceberg-600"
-				>Full Resume</a
-			>
+			{#if $viewportWidth >= Breakpoints.sm}
+				<button
+					class="btn btn-xs bg-iceberg-400 text-iceberg-100 hover:bg-iceberg-500 active:bg-iceberg-600"
+					on:click={() => (showResume = true)}>Full Resume</button
+				>
+			{/if}
 		</h2>
 		{#if inView}
 			<div
@@ -55,4 +59,15 @@
 			</div>
 		{/if}
 	</div>
+	{#if $viewportWidth < Breakpoints.sm}
+		<a
+			class="link mt-6 text-sm font-thin text-iceberg-700 hover:text-iceberg-800 hover:no-underline active:text-iceberg-950"
+			target="_blank"
+			href="src/lib/assets/daniel-zych-software-engineer-resume.pdf"
+			>View Full Resume</a
+		>
+	{/if}
+	{#if showResume}
+		<Resume bind:showResume />
+	{/if}
 </section>

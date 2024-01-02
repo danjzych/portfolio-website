@@ -17,7 +17,7 @@
 
 {#if visible}
 	<nav
-		class="position navbar fixed z-50 bg-base-100 shadow-md"
+		class="position navbar fixed z-40 bg-base-100 shadow-md"
 		transition:fly={{ y: -200, duration: 1000 }}
 		on:introend={() => {
 			mainVisible = true;
