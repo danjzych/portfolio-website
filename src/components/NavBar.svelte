@@ -24,9 +24,9 @@
 		}}
 	>
 		<a
-			class="navbar-start text-3xl"
+			class="hero-name navbar-start text-3xl font-extrabold tracking-tighter"
 			href="#hero"
-			on:click|preventDefault={scrollToSection}>Daniel Zych</a
+			on:click|preventDefault={scrollToSection}>DZ</a
 		>
 		<div class="navbar-end">
 			{#if mainVisible}

@@ -33,7 +33,7 @@
 	use:useIntersectionObserver
 	on:enterView={() => (inView = true)}
 >
-	<div class="mt-40 px-4 md:w-3/5 md:px-0">
+	<div class="mt-40 w-screen px-4 md:w-4/5 md:px-0 lg:w-3/5">
 		<h2
 			class="flex items-center justify-between pb-6 text-3xl font-semibold"
 		>
@@ -49,7 +49,7 @@
 		</h2>
 		{#if inView}
 			<div
-				class="w-inherit lg:grid lg:grid-cols-6 lg:gap-4"
+				class="w-inherit md:grid md:grid-cols-6 md:gap-4"
 				transition:blur={{ delay: 200, duration: 400 }}
 			>
 				<ToggleBar items={experiences} bind:selected={selectedIdx} />

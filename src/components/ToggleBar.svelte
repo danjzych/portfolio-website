@@ -5,7 +5,7 @@
 	export let selected: number;
 </script>
 
-<ul class="col-span-2 flex lg:block">
+<ul class="col-span-2 flex md:block">
 	{#each items as item, i}
 		<li>
 			<button

@@ -31,20 +31,3 @@
 		</p>
 	{/if}
 </div>
-
-<style>
-	.hero-name {
-		background: radial-gradient(#1e514e, #76d2c4);
-		background-size: 200% auto;
-		color: transparent;
-		-webkit-background-clip: text;
-		background-clip: text;
-		animation: move-gradient 5s linear infinite;
-	}
-
-	@keyframes move-gradient {
-		to {
-			background-position: 200% center;
-		}
-	}
-</style>

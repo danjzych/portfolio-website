@@ -7,7 +7,7 @@
 </script>
 
 <div
-	class="mx-auto mt-3 w-5/6 rounded-lg bg-iceberg-50 px-3 py-2 shadow-xl md:col-span-4 md:mx-0 md:w-full lg:mt-0"
+	class="mx-auto mt-3 w-5/6 rounded-lg bg-iceberg-50 px-3 py-2 shadow-xl md:col-span-4 md:mx-0 md:mt-0 md:w-full"
 	transition:fade|global={{ duration: 250 }}
 >
 	<h3>
