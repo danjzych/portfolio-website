@@ -2,7 +2,7 @@
     {
         "title": "Friender",
         "link": "http://friender.danielzych.com/",
-        "description": "A web app app to  find like-minded people near you. After making an account and building a profile, users are able to explore, match, and chat with other uses within their selected geographic search radius.",
+        "description": "A web app to find like-minded people near you. After making an account and building a profile, users are able to explore, match, and chat with other uses within their selected geographic search radius.",
         "features": ["Geolocation-based user matching"],
         "notes": "To best experience demo, use demo account provided on homepage, or create a new user with zipcode set to 10001 and a radius of 10 or greater.",
         "image": "/imgs/friender-homepage-screenshot.png",
@@ -19,7 +19,7 @@
     {
         "title": "Jobly",
         "link": "http://jobly.danielzych.com/",
-        "description": "A job board web app to explore jobs and employers. Use live search feature for quick and responsive search experience.",
+        "description": "A job board web app to explore jobs and employers. Try the live search feature for a quick and responsive search experience.",
         "image": "/imgs/jobly-homepage-screenshot.png",
         "github": "https://github.com/danjzych/react-jobly/",
         "demo": "http://jobly.danielzych.com/",
@@ -32,7 +32,7 @@
     {
         "title": "Wordle",
         "link": "http://wordle.danielzych.com/",
-        "description": "I love Wordle, so I made my own version! Users can use machine keyboard or UI keyboard buttons to play. Game record stored in local storage to track your record over time! Unlike official Wordle, this version provides an unlimited number of words per day.",
+        "description": "I love Wordle, so I made my own version! Users can use machine keyboard or UI keyboard buttons to play. Game record is stored in local storage to track your record over time! Unlike the official Wordle, this version provides an unlimited number of words per day.",
         "image": "/imgs/wordle-homepage-screenshot.png",
         "github": "https://github.com/danjzych/wordle",
         "demo": "http://wordle.danielzych.com/",

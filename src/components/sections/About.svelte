@@ -44,7 +44,7 @@
 				</div>
 			{/if}
 		</div>
-		<div class="mt-8 flex items-center md:col-span-2 md:my-0">
+		<div class="mt-8 flex flex-col items-center md:col-span-2 md:my-0">
 			{#if inView}
 				<img
 					src={headshot}
