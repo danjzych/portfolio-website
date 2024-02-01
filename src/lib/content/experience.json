@@ -12,8 +12,7 @@
                 "Translated complex design requirements into interactive and responsive components in React, Typescript, GraphQL, and Sass codebase as part of frontend redesign",
                 "Built “card” component to dynamically query for and present live data for open support tickets, as determined by user preferences",
                 "Implemented interaction-heavy Nav Bar component, using React Router to navigate users, and CSS to animate collapse of Nav Bar and additional UI interactions",
-                "Tested to ensure style and functionality of components in previous version of product, making sure that new style and functionality only were viewable to users who opted into trialing new version",
-                "Collaborated asynchronously with Product Owner to ensure components were implemented correctly and adhered to company style guide"
+                "Tested to ensure style and functionality of components in previous version of product, making sure that new style and functionality only were viewable to users who opted into trialing new version"
             ]
         }
     },
