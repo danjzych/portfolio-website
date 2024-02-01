@@ -1,13 +1,28 @@
 [
     {
         "company": {
+            "name": "Active Artist",
+            "link": "https://www.activeartist.io/"
+        },
+        "position": {
+            "title": "Fullstack Developer (Freelance)",
+            "start_date": "January 2024",
+            "end_date": "Present",
+            "description": [
+                "Debugged primary product form, refactored and improved form validation and corresponding UI feedback",
+                "Designed and built reusable UI components"
+            ]
+        }
+    },
+    {
+        "company": {
             "name": "Foqal",
             "link": "https://www.foqal.io/"
         },
         "position": {
             "title": "Software Engineer Intern",
             "start_date": "October 2023",
-            "end_date": "November 23",
+            "end_date": "November 2023",
             "description": [
                 "Translated complex design requirements into interactive and responsive components in React, Typescript, GraphQL, and Sass codebase as part of frontend redesign",
                 "Built “card” component to dynamically query for and present live data for open support tickets, as determined by user preferences",
