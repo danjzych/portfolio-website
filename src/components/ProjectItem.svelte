@@ -4,7 +4,6 @@
 	import externalLink from '$lib/assets/svgs/external-link.svg';
 	import githubIcon from '$lib/assets/svgs/github-icon.svg';
 	import useIntersectionObserver from '$lib/useIntersectionObserver';
-	import { onMount } from 'svelte';
 
 	export let project: Project;
 
