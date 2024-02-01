@@ -9,12 +9,14 @@
 
 <section
 	id="about"
-	class="flex min-h-screen min-w-full flex-col items-center justify-center"
+	class="flex min-h-screen min-w-full flex-col items-center"
 	use:useIntersectionObserver
 	on:enterView={() => (inView = true)}
 >
-	<div class="px-4 md:grid md:w-3/5 md:grid-cols-5 md:gap-4 md:px-0">
-		<div class="flex flex-col gap-3 font-light md:col-span-3">
+	<div class="mt-40 px-4 md:grid md:w-3/5 md:grid-cols-5 md:gap-4 md:px-0">
+		<div
+			class="flex flex-col items-center gap-3 font-light md:col-span-3 md:items-start"
+		>
 			<h2 class="text-3xl font-semibold">
 				<a href="#about" on:click|preventDefault={scrollToSection}
 					>About Me</a
@@ -50,6 +52,7 @@
 					src={headshot}
 					alt="Daniel Zych Headshot"
 					loading="lazy"
+					class="w-40 drop-shadow-2xl md:w-full"
 					in:fly={{ delay: 400, duration: 1000, x: 500, opacity: 0 }}
 				/>
 			{/if}

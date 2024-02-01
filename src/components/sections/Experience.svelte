@@ -34,19 +34,19 @@
 	on:enterView={() => (inView = true)}
 >
 	<div class="mt-40 w-screen px-4 md:w-4/5 md:px-0 lg:w-3/5">
-		<h2
-			class="flex items-center justify-between pb-6 text-3xl font-semibold"
-		>
-			<a href="#experience" on:click|preventDefault={scrollToSection}
-				>Experience</a
-			>
+		<div class="mb-6 flex items-center justify-center md:justify-between">
+			<h2 class="text-3xl font-semibold">
+				<a href="#experience" on:click|preventDefault={scrollToSection}
+					>Experience</a
+				>
+			</h2>
 			{#if $viewportWidth >= Breakpoints.sm}
 				<button
 					class="btn btn-xs bg-iceberg-400 text-iceberg-100 hover:bg-iceberg-500 active:bg-iceberg-600"
 					on:click={() => (showResume = true)}>Full Resume</button
 				>
 			{/if}
-		</h2>
+		</div>
 		{#if inView}
 			<div
 				class="w-inherit md:grid md:grid-cols-6 md:gap-4"
