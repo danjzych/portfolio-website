@@ -18,7 +18,8 @@
 	let inView = false;
 	let showResume = false;
 
-	$: if (selectedIdx) {
+	$: {
+		selectedIdx = selectedIdx;
 		visible = false;
 
 		setTimeout(() => {
