@@ -5,7 +5,7 @@
             "link": "https://www.activeartist.io/"
         },
         "position": {
-            "title": "Fullstack Developer (Freelance)",
+            "title": "Full-Stack Developer (Freelance)",
             "start_date": "January 2024",
             "end_date": "Present",
             "description": [
@@ -24,10 +24,10 @@
             "start_date": "October 2023",
             "end_date": "November 2023",
             "description": [
-                "Translated complex design requirements into interactive and responsive components in React, Typescript, GraphQL, and Sass codebase as part of frontend redesign",
+                "Translated complex design requirements into interactive and responsive components as part of frontend redesign",
                 "Built “card” component to dynamically query for and present live data for open support tickets, as determined by user preferences",
                 "Implemented interaction-heavy Nav Bar component, using React Router to navigate users, and CSS to animate collapse of Nav Bar and additional UI interactions",
-                "Tested to ensure style and functionality of components in previous version of product, making sure that new style and functionality only were viewable to users who opted into trialing new version"
+                "Tested to ensure style and functionality of components in previous version of product, making sure that new style and functionality only were viewable to users who opted into new design"
             ]
         }
     },
@@ -55,8 +55,7 @@
                 "Grew new business intelligence product to over 200+ customer accounts after receiving ownership during beta/MVP phase",
                 "Collaborated with executive leadership, engineering, design, sales, marketing, support, and onboarding teams to successfully plan, execute, and rollout full redesign of product",
                 "Planned and implemented product analytics strategy using Mixpanel and Segment, leading to Improved DAU, WAU, MAU, and Average Session Duration",
-                "Conducted always-on user research and user interviews to maintain an up-to-date and prioritized backlog to use in product roadmapping and sprint planning",
-                "Lead engineering team sprint planning and maintained tickets in Jira"
+                "Conducted always-on user research and user interviews to maintain an up-to-date and prioritized backlog to use in product roadmapping and sprint planning"
             ]
         }
     },

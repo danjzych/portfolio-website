@@ -25,9 +25,9 @@
 			class="text-lg"
 			transition:fade|global={{ delay: 2750, duration: 750 }}
 		>
-			I'm a Full-Stack Software Engineer who loves designing and building
-			powerful and intuitive applications that make it as easy as possible
-			for users to get value from them.
+			I'm a Frontend-focused Full-Stack Software Engineer who loves
+			building powerful and intuitive applications, bringing ideas to life
+			as great user experiences.
 		</p>
 	{/if}
 </div>

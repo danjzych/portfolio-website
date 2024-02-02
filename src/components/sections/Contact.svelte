@@ -24,11 +24,11 @@
 			class="text-center font-light sm:w-3/5"
 			transition:fade={{ duration: 400 }}
 		>
-			I’m currently on the hunt for my next engineering opportunity, and
-			would love to connect with you. Whether you want to talk about an
-			open position, an open-source project, or just tech in general, I’m
-			happy to chat. Shoot me an email, drop me a message on LinkedIn, or
-			take a look at my Github!
+			I could talk about software engineering all day, and would love to
+			connect with you! Whether you want to talk about an open-source
+			project, an open position, or just tech in general, I’m happy to
+			chat. Shoot me an email, drop me a message on LinkedIn, or take a
+			look at my Github!
 		</p>
 		<div class="join">
 			<a

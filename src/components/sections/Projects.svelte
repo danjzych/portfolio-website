@@ -12,7 +12,7 @@
 	class="flex min-h-screen min-w-full flex-col items-center gap-6"
 >
 	<h2
-		class="mt-32 flex w-3/5 items-center justify-between pb-6 text-3xl font-semibold"
+		class="mt-32 flex w-3/5 flex-col items-center pb-6 text-3xl font-semibold md:flex-row md:justify-between"
 	>
 		<a href="#projects" on:click|preventDefault={scrollToSection}
 			>Portfolio</a
