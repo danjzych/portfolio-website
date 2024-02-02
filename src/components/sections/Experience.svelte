@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { blur } from 'svelte/transition';
+	import { blur, slide } from 'svelte/transition';
 	import { viewportWidth } from '../../stores';
 	import type { Experience } from '../../types/interfaces';
 	import { Breakpoints } from '../../types/types';
@@ -9,6 +9,7 @@
 	import EXPERIENCE from '$lib/content/experience.json';
 	import { scrollToSection } from '$lib/utils';
 	import useIntersectionObserver from '$lib/useIntersectionObserver';
+	import { cubicIn, cubicOut } from 'svelte/easing';
 
 	const experiences: Experience[] = EXPERIENCE;
 
@@ -60,9 +61,10 @@
 			</div>
 		{/if}
 	</div>
-	{#if $viewportWidth < Breakpoints.sm}
+	{#if $viewportWidth < Breakpoints.sm && inView}
 		<a
 			class="link mt-6 text-sm font-thin text-iceberg-700 hover:text-iceberg-800 hover:no-underline active:text-iceberg-950"
+			transition:slide={{ delay: 400, duration: 350, easing: cubicIn }}
 			target="_blank"
 			href="src/lib/assets/daniel-zych-software-engineer-resume.pdf"
 			>View Full Resume</a
