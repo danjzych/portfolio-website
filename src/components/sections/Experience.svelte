@@ -50,7 +50,7 @@
 		</div>
 		{#if inView}
 			<div
-				class="w-inherit md:grid md:grid-cols-6 md:gap-4"
+				class="w-inherit flex flex-col items-center md:grid md:flex-none md:grid-cols-6 md:items-start md:gap-4"
 				transition:blur={{ delay: 200, duration: 400 }}
 			>
 				<ToggleBar items={experiences} bind:selected={selectedIdx} />
