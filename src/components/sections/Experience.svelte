@@ -42,7 +42,7 @@
 					>Experience</a
 				>
 			</h2>
-			{#if $viewportWidth >= Breakpoints.sm}
+			{#if $viewportWidth >= Breakpoints.md}
 				<button
 					class="btn btn-xs bg-iceberg-400 text-iceberg-100 hover:bg-iceberg-500 active:bg-iceberg-600"
 					on:click={() => (showResume = true)}>Full Resume</button
@@ -61,10 +61,10 @@
 			</div>
 		{/if}
 	</div>
-	{#if $viewportWidth < Breakpoints.sm && inView}
+	{#if $viewportWidth < Breakpoints.md && inView}
 		<a
 			class="link mt-6 text-sm font-thin text-iceberg-700 hover:text-iceberg-800 hover:no-underline active:text-iceberg-950"
-			transition:slide={{ delay: 400, duration: 350, easing: cubicIn }}
+			in:slide={{ delay: 400, duration: 350, easing: cubicIn }}
 			target="_blank"
 			href="src/lib/assets/daniel-zych-software-engineer-resume.pdf"
 			>View Full Resume</a
