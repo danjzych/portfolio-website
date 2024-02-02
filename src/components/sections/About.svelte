@@ -2,7 +2,7 @@
 	import { fade, fly } from 'svelte/transition';
 	import headshot from '$lib/assets/Daniel-Zych.png';
 	import { scrollToSection } from '$lib/utils';
-	import useIntersectionObserver from '$lib/useIntersectionObserver';
+	import useIntersectionObserver from '$lib/actions/useIntersectionObserver';
 
 	let inView = false;
 </script>

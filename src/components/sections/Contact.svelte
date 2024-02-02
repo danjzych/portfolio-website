@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { fly, fade } from 'svelte/transition';
-	import useIntersectionObserver from '$lib/useIntersectionObserver';
+	import useIntersectionObserver from '$lib/actions/useIntersectionObserver';
 	import mail from '$lib/assets/svgs/mail.svg';
 	import mailOpen from '$lib/assets/svgs/mail-open.svg';
 	import linkedInIcon from '$lib/assets/svgs/linkedin-icon-100.svg';

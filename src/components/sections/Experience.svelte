@@ -8,7 +8,7 @@
 	import Resume from '../Resume.svelte';
 	import EXPERIENCE from '$lib/content/experience.json';
 	import { scrollToSection } from '$lib/utils';
-	import useIntersectionObserver from '$lib/useIntersectionObserver';
+	import useIntersectionObserver from '$lib/actions/useIntersectionObserver';
 	import { cubicIn, cubicOut } from 'svelte/easing';
 
 	const experiences: Experience[] = EXPERIENCE;

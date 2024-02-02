@@ -3,7 +3,7 @@
 	import type { Project } from '../types/interfaces';
 	import externalLink from '$lib/assets/svgs/external-link.svg';
 	import githubIcon from '$lib/assets/svgs/github-icon.svg';
-	import useIntersectionObserver from '$lib/useIntersectionObserver';
+	import useIntersectionObserver from '$lib/actions/useIntersectionObserver';
 
 	export let project: Project;
 
