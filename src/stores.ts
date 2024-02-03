@@ -10,4 +10,10 @@ interface Coordinates {
 	y: number;
 }
 
-export const cursorCoordinates = spring<Coordinates>();
+export const cursorCoordinates = spring<Coordinates>(
+	{ x: 0, y: 0 },
+	{
+		stiffness: 0.15,
+		damping: 0.33,
+	},
+);

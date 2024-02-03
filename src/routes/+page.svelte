@@ -8,7 +8,6 @@
 	import Projects from '../components/sections/Projects.svelte';
 	import Contact from '../components/sections/Contact.svelte';
 	import Footer from '../components/Footer.svelte';
-	import MouseShadow from '../components/MouseShadow.svelte';
 
 	/** Track window.innerWidth to responsively component layout */
 	onMount(() => {
@@ -26,6 +25,5 @@
 	<Experience />
 	<Projects />
 	<Contact />
-	<MouseShadow />
 </main>
 <Footer />
