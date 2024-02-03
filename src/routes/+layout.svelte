@@ -7,9 +7,9 @@
 	import MouseShadow from '../components/MouseShadow.svelte';
 </script>
 
-<MouseShadow />
 <NavBar />
 <slot />
 {#if $viewportWidth >= Breakpoints.lg}
 	<LinkSideBar />
 {/if}
+<MouseShadow />

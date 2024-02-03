@@ -4,5 +4,6 @@
 
 <div
 	class="position fixed size-40 border-2"
-	style="top: {$cursorCoordinates.y}px; left: {$cursorCoordinates.x}px"
+	style:top="{$cursorCoordinates.y}px"
+	style:left="{$cursorCoordinates.x}px"
 ></div>
