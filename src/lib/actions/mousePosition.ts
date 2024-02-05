@@ -7,11 +7,11 @@ function setCoordinates(e: MouseEvent) {
 }
 
 export default function mousePosition(element: HTMLElement) {
-	element.addEventListener('mousemove', setCoordinates);
+	window.addEventListener('mousemove', setCoordinates);
 
 	return {
 		destroy() {
-			element.removeEventListener('mousemove', setCoordinates);
+			window.removeEventListener('mousemove', setCoordinates);
 		},
 	};
 }

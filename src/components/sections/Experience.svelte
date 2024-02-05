@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { blur, slide } from 'svelte/transition';
-	import { viewportWidth } from '../../stores';
+	import { viewport } from '../../stores';
 	import type { Experience } from '../../types/interfaces';
 	import { Breakpoints } from '../../types/types';
 	import ToggleBar from '../ToggleBar.svelte';
@@ -42,7 +42,7 @@
 					>Experience</a
 				>
 			</h2>
-			{#if $viewportWidth >= Breakpoints.md}
+			{#if $viewport.width >= Breakpoints.md}
 				<button
 					class="btn btn-xs bg-iceberg-400 text-iceberg-100 hover:bg-iceberg-500 active:bg-iceberg-600"
 					on:click={() => (showResume = true)}>Full Resume</button
@@ -61,7 +61,7 @@
 			</div>
 		{/if}
 	</div>
-	{#if $viewportWidth < Breakpoints.md && inView}
+	{#if $viewport.width < Breakpoints.md && inView}
 		<a
 			class="link mt-6 text-sm font-thin text-iceberg-700 hover:text-iceberg-800 hover:no-underline active:text-iceberg-950"
 			in:slide={{ delay: 400, duration: 350, easing: cubicIn }}

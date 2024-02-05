@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
-	import { viewportWidth } from '../stores';
+	import { viewport } from '../stores';
 	import mousePosition from '$lib/actions/mousePosition';
 	import Hero from '../components/sections/Hero.svelte';
 	import About from '../components/sections/About.svelte';
@@ -9,12 +9,14 @@
 	import Contact from '../components/sections/Contact.svelte';
 	import Footer from '../components/Footer.svelte';
 
-	/** Track window.innerWidth to responsively component layout */
 	onMount(() => {
-		viewportWidth.set(window.innerWidth);
+		viewport.set({ width: window.innerWidth, height: window.innerHeight });
 
 		window.addEventListener('resize', (evt) => {
-			viewportWidth.set(window.innerWidth);
+			viewport.set({
+				width: window.innerWidth,
+				height: window.innerHeight,
+			});
 		});
 	});
 </script>

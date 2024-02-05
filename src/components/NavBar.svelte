@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
 	import { fade, fly } from 'svelte/transition';
-	import { viewportWidth } from '../stores';
+	import { viewport } from '../stores';
 	import { Breakpoints } from '../types/types';
 	import { scrollToSection } from '$lib/utils';
 
@@ -30,7 +30,7 @@
 		>
 		<div class="navbar-end">
 			{#if mainVisible}
-				{#if $viewportWidth >= Breakpoints.sm}
+				{#if $viewport.width >= Breakpoints.sm}
 					<div class="flex items-center gap-2">
 						<a
 							href="#about"
