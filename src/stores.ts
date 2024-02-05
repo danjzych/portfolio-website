@@ -18,7 +18,7 @@ type Coordinates = {
 export const cursorCoordinates = spring<Coordinates>(
 	{ x: 0, y: 0 },
 	{
-		stiffness: 0.15,
+		stiffness: 0.01,
 		damping: 0.33,
 	},
 );
