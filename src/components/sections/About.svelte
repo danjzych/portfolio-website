@@ -41,7 +41,7 @@
 						When I’m not hunkered down at my computer, I’m making music 🎸,
 						skateboarding 🛹, hanging out with my fiancée and our cats 🐈,
 						or having one more coffee than I need to, then regretting it
-						☕️😵.
+						☕️.
 					</p>
 				</div>
 			{/if}
