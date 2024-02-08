@@ -20,7 +20,6 @@
     <li>
       <a href="#about-the-project">About The Project</a>
       <ul>
-        <li><a href="#using-adopter">Using Adopter</a></li>
         <li><a href="#built-with">Built With</a></li>
       </ul>
     </li>
@@ -28,7 +27,6 @@
       <a href="#getting-started">Getting Started</a>
       <ul>
         <li><a href="#installation-and-setup">Installation and Setup</a></li>
-        <li><a href="#test">Running Tests</a></li>
       </ul>
     </li>
     <li><a href="#contact">Contact</a></li>
@@ -64,9 +62,9 @@ To get a local version of the site up and running, do the following.
 
 1. Clone the repo
    ```sh
-   git clone https://github.com/danjzych/fetch-frontend-takehome.git
+   git clone https://github.com/danjzych/portfolio-website.git
    ```
-2. cd into your Adopter directory and install project dependencies
+2. cd into your directory and install project dependencies
 
    ```sh
    cd ./your-directory
