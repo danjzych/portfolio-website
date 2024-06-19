@@ -1,6 +1,22 @@
 [
     {
         "company": {
+            "name": "Fetch Rewards",
+            "link": "https://fetch.com/"
+        },
+        "position": {
+            "title": "Frontend Engineering Apprentice",
+            "start_date": "April 2024",
+            "end_date": "Present",
+            "description": [
+                "Engineered a microfrontend to minify support agent workflows into a single robust form, featuring real-time input validation and conditional form sections and user flows based on user input and form validity, with Svelte",
+                "Refactored and increased test coverage of internal legacy support dashboard built with React, Redux, and Typescript",
+                "Built multiple custom data-formatting inputs and improved performance and accessibility of various components in internal shared component library"
+            ]
+        }
+    },
+    {
+        "company": {
             "name": "Active Artist",
             "link": "https://www.activeartist.io/"
         },
@@ -9,8 +25,9 @@
             "start_date": "January 2024",
             "end_date": "Present",
             "description": [
-                "Debugged primary product form, refactored and improved form validation and corresponding UI feedback",
-                "Designed and built reusable UI components"
+                "Designed and implemented a flexible and reusable form UI pattern in React, controlling form method and action, default values, and validation logic through parent components and React Hook Form",
+                "Designed and built reusable UI components",
+                "Collaborated on product roadmap and planning with owner and lead engineer"
             ]
         }
     },
